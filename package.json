@@ -1,0 +1,26 @@
+{
+  "name": "zurl-url-shortner",
+  "version": "1.0.0",
+  "description": "A Backend URL Shortener Service takes a long, complex web address and converts it into a shorter, more manageable link. This is useful for sharing links on social media, in emails, or anywhere else where space is limited.",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && nodemon dist/server.js",
+    "dev": "nodemon --watch src --ext ts --exec \"npm run build && node dist/server.js\"",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.0",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.2.0",
+    "typescript": "^5.9.2"
+  }
+}
